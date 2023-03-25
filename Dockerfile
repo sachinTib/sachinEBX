@@ -1,4 +1,4 @@
-FROM ebx:latest
+FROM shatpaki/ebxce:v1
 COPY "./sample-mdm.xml" "/opt/ebx/contexts"
 COPY "./sample-mdm" "/opt/ebx/webapps"
 COPY "./lib/*.jar" "/opt/ebx/lib"
