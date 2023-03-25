@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<root>
+    <layouts>
+        <name>EmployeeTable</name>
+        <targetTable>/root/Employee</targetTable>
+        <expression>{"type":"Call","callee":{"type":"Identifier","kind":"IMPORT","name":"$with"},"arguments":[{"type":"Argument","name":"variables","value":{"type":"Array","items":[{"type":"Object","properties":[{"type":"Property","key":"type","value":{"type":"Literal","value":"var"}},{"type":"Property","key":"name","value":{"type":"Literal","value":"record"}},{"type":"Property","key":"value","value":{"type":"Identifier","kind":"VARIABLE","name":"@record"}}]}]}},{"type":"Argument","name":"content","value":{"type":"Call","callee":{"type":"Identifier","kind":"IMPORT","name":"@layout"},"arguments":[{"type":"Argument","name":"toolbar","value":{"type":"Call","callee":{"type":"Identifier","kind":"IMPORT","name":"@toolbar-default"},"arguments":[]}},{"type":"Argument","name":"body","value":{"type":"Call","callee":{"type":"Identifier","kind":"IMPORT","name":"@form"},"arguments":[{"type":"Argument","name":"content","value":{"type":"Array","items":[{"type":"Identifier","kind":"VARIABLE","name":"record/empId"},{"type":"Identifier","kind":"VARIABLE","name":"record/empName"},{"type":"Identifier","kind":"VARIABLE","name":"record/email"}]}}]}},{"type":"Argument","name":"actionBar","value":{"type":"Call","callee":{"type":"Identifier","kind":"IMPORT","name":"@action-bar-default"},"arguments":[]}}]}}]}</expression>
+    </layouts>
+</root>

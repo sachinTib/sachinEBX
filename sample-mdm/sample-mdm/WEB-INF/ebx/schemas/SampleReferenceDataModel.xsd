@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--XML schema generated from EBX(R) DMA instance [reference=SampleReferenceDataModel] on Thu Feb 17 18:35:51 IST 2022 by user [admin].-->
+<xs:schema xmlns:osd="urn:ebx-schemas:common_1.0" xmlns:fmt="urn:ebx-schemas:format_1.0" xmlns:ebxbnd="urn:ebx-schemas:binding_1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:ebxs="urn:ebx-schemas:session_1.0">
+    <xs:import namespace="urn:ebx-schemas:common_1.0" schemaLocation="http://schema.orchestranetworks.com/common_1.0.xsd"/>
+    <xs:import namespace="urn:ebx-schemas:session_1.0" schemaLocation="http://schema.orchestranetworks.com/session_1.0.xsd"/>
+    <xs:include schemaLocation="./BasicTypesDataModel.xsd"/>
+    <xs:include schemaLocation="./CommonTypesDataModel.xsd"/>
+    <xs:include schemaLocation="./SampleTypesDataModel.xsd"/>
+    <xs:annotation>
+        <xs:appinfo>
+            <osd:extensions class="com.sample.mdm.sample.schemaextension.SampleReferenceSchemaExtension"/>
+            <osd:validation/>
+            <osd:inheritance>
+                <dataSetInheritance>none</dataSetInheritance>
+            </osd:inheritance>
+            <ebxbnd:binding targetDirectory="../sample-mdm/src">
+                <javaPathConstants typeName="com.sample.mdm.sample.path.SampleReferencePaths">
+                    <nodes root="/" prefix="" relativeToRoot="false"/>
+                </javaPathConstants>
+            </ebxbnd:binding>
+        </xs:appinfo>
+    </xs:annotation>
+    <xs:element name="root" osd:access="--">
+        <xs:complexType>
+            <xs:sequence/>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
